@@ -1,30 +1,34 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+title: AP Jet s. r. o.
+featuredImage: 'https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/'
+subtitle: >-
+  AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC obráběním a
+  zámečnickými pracemi
+accordion:
+  - content: >
+      Jsme dynamicky se rozvíjející česká firma zabývající se dělením,
+      obráběním, svářením a ohýbáním širokého spektra železných i neželezných
+      materiálů. Díky technologii řezání vodním paprskem jsme flexibilní ve
+      zpracování různých materiálů, což je naší velkou výhodou oproti
+      konkurenci. Díky vysokému nasazení a pečlivému výběru dodavatelů veškerých
+      materiálů a technologii, jsme schopni splnit každý reálný termín dodání v
+      odpovídající kvalitě. Jednou z hlavních priorit je pro nás především
+      spokojený zákazník.
+    title: O nás
 meta:
   description: This is a meta description.
   title: The Ultimate Gatsby Starter
 ---
+RYCHLOST
 
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightening fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
+Vaše přání vyřídíme co nejrychleji!
 
-View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
+ZKUŠENOSTI
 
-# Features
+Několikaleté zkušenosti v oboru!
 
-- **[Gatsby](https://gatsbyjs.org)** static site generator
-- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-- Dynamic menus and forms
-- **[Mailchimp](http://mailchimp.com)** and **[Uploadcare](https://uploadcare.com)** integrations
-- Fully responsive layout for mobile and widescreen browsing
-- Blog searching and paging functionality
-- Seamless image and content sliders
+SPOLEHLIVOST
 
-## Get started
-
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)
+Co slíbíme, to splníme!
