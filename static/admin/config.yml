@@ -112,6 +112,12 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Title, name: title, widget: string }
           - { label: Featured Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: markdown }
+          - label: "Gallery"
+            name: "galleryImages"
+            widget: "list"
+            allow_add: true
+            summary: '{{fields.image}}'
+            field: {label: Image, name: image, widget: image}
           - label: 'Meta'
             required: false
             name: 'meta'
