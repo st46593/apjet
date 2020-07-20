@@ -309,8 +309,8 @@ collections: # A list of collections the CMS should be able to edit
         summary: '{{fields.image}} - {{fields.title}} - {{fields.alt}}'
         fields:
           - {label: Obrázek, name: image, widget: image}
-          - {label: Titulek, name: title, widget: string}
-          - {label: Popis, name: alt, widget: string}
+          - {label: Titulek, name: title, widget: string, required: false}
+          - {label: Popis, name: alt, widget: string, required: false}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
