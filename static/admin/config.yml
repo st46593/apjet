@@ -300,16 +300,13 @@ collections: # A list of collections the CMS should be able to edit
           name: featuredImage,
           widget: image,
           required: false,
-          allow_multiple: false 
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
-      - {
-          label: Galerie,
-          name: gallery,
-          widget: image,
-          required: false,
-        }
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "image"
+        required: false
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
