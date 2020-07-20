@@ -308,7 +308,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         allow_add: true
         summary: '{{fields.image}}'
-        field: {label: Image, name: image, widget: image}
+        field: {label: Image, name: image, widget: image, allow_multiple: true}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
