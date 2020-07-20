@@ -8,7 +8,7 @@ media_library:
   name: uploadcare
   config:
     publicKey: a73a170cb5cdef662983
-    multiple: true
+    multiple: false
     tabs: 'file camera url facebook gdrive'
     effects: 'crop,rotate,enhance,grayscale'
     imageShrink: '2000x2000'
@@ -299,8 +299,7 @@ collections: # A list of collections the CMS should be able to edit
           label: Featured Image,
           name: featuredImage,
           widget: image,
-          required: false,
-          allow_multiple: false
+          required: false
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
@@ -309,6 +308,10 @@ collections: # A list of collections the CMS should be able to edit
           name: images,
           widget: image,
           required: false,
+          fields: 
+            - {label: Obrázek, name: image, widget: image}
+            - {label: Titulek, name: title, widget: string, required: false}
+            - {label: Popisek, name: title, widget: string, required: false}
         }
       - label: 'Categories'
         name: 'categories'
