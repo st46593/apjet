@@ -305,8 +305,10 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Content, name: body, widget: markdown }
       - label: "Gallery"
         name: "galleryImages"
-        widget: "image"
-        required: false
+        widget: "list"
+        allow_add: true
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
