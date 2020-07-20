@@ -296,7 +296,7 @@ collections: # A list of collections the CMS should be able to edit
         default: 'Published'
       - { label: Date / Order, name: date, widget: date, format: 'YYYY-MM-DD' }
       - {
-          label: Featured Image,
+          label: Úvodní obrázek,
           name: featuredImage,
           widget: image,
           required: false
@@ -306,12 +306,14 @@ collections: # A list of collections the CMS should be able to edit
       - {
           label: Galerie,
           name: images,
-          widget: image,
+          widget: list,
           required: false,
+          allow_add: true,
+          summary: '{{fields.image}} - {{fields.title}} - {{fields.alt}}',
           fields: 
             - {label: Obrázek, name: image, widget: image}
             - {label: Titulek, name: title, widget: string, required: false}
-            - {label: Popisek, name: title, widget: string, required: false}
+            - {label: Popisek, name: alt, widget: string, required: false}
         }
       - label: 'Categories'
         name: 'categories'
