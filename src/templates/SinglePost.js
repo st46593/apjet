@@ -135,7 +135,9 @@ export const pageQuery = graphql`
         categories {
           category
         }
-        gallery
+        gallery {
+          image
+        }
       }
     }
 
