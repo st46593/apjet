@@ -63,11 +63,11 @@ export const SinglePostTemplate = ({
               <Content source={body} />
             </div>
 
-            {gallery && (
+            {images && (
             <section className="section">
               <div className="container">
                 <h2>Our gallery component</h2>
-                <Gallery images={gallery} />
+                <Gallery images={images} />
               </div>
             </section>
             )}
@@ -135,7 +135,7 @@ export const pageQuery = graphql`
         categories {
           category
         }
-        gallery {
+        images {
           image
         }
       }

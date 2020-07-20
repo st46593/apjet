@@ -306,7 +306,7 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Content, name: body, widget: markdown }
       - {
           label: Galerie,
-          name: gallery,
+          name: images,
           widget: image,
           required: false,
         }
