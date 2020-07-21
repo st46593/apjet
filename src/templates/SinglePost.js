@@ -58,11 +58,13 @@ export const SinglePostTemplate = ({
                 {title}
               </h1>
             )}
-
+  
             <div className="SinglePost--InnerContent">
               <Content source={body} />
             </div>
-
+            {images && (
+              <>{console.log(images)}</>
+            )}
             <div className="SinglePost--Pagination">
               {prevPostURL && (
                 <Link
@@ -126,6 +128,7 @@ export const pageQuery = graphql`
         categories {
           category
         }
+        images
       }
     }
 
