@@ -306,7 +306,6 @@ collections: # A list of collections the CMS should be able to edit
       - label: "Galerie"
         name: "images"
         widget: "list"
-        summary: '{{fields.image}} - {{fields.author.name}}'
         fields:
           - {label: Obrázek, name: image, widget: image, required: true}
           - label: Author
