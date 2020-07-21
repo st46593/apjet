@@ -132,6 +132,8 @@ export const pageQuery = graphql`
         }
         images {
           image
+          alt
+          title
         }
       }
     }

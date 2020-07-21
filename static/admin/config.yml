@@ -299,7 +299,7 @@ collections: # A list of collections the CMS should be able to edit
           label: Úvodní obrázek,
           name: featuredImage,
           widget: image,
-          required: false
+          required: true
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
@@ -309,8 +309,8 @@ collections: # A list of collections the CMS should be able to edit
         summary: '{{fields.image}} - {{fields.title}} - {{fields.alt}}'
         fields: 
           - {label: Obrázek, name: image, widget: image}
-          - {label: Text, name: title, widget: string, required: false}
-          - {label: Popisek, name: alt, widget: string, required: false}
+          - {label: Text, name: title, widget: string, required: false, default: ''}
+          - {label: Popisek, name: alt, widget: string, required: false, default: ''}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
