@@ -64,12 +64,7 @@ export const SinglePostTemplate = ({
             <div className="SinglePost--InnerContent">
               <Content source={body} />
               {images && (
-              <section className="section">
-              <div className="container">
-                <h2>Our gallery component</h2>
                 <Gallery images={images} />
-              </div>
-            </section>
             )}
             </div>
             <div className="SinglePost--Pagination">
