@@ -318,10 +318,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - label: 'Category'
             name: 'category'
-            widget: 'relation'
-            collection: 'postCategories'
-            searchFields: ['title']
-            valueField: 'title'
+            widget: 'image'
       - label: 'Meta'
         required: false
         name: 'meta'
