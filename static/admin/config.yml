@@ -303,17 +303,18 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
-      - label: "Galerie"
-        name: "images"
+      - label: "Testimonials"
+        name: "testimonials"
         widget: "list"
+        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - {label: Obrázek, name: image, widget: image, required: false}
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
           - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Avatar, name: avatar, widget: image}
+          name: author
+          widget: object
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Avatar, name: avatar, widget: image}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
