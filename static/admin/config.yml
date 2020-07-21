@@ -307,13 +307,11 @@ collections: # A list of collections the CMS should be able to edit
         name: "images"
         widget: "list"
         fields:
-          - {label: Obrázek, name: image, widget: image}
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Avatar, name: avatar, widget: image}
+          - label: Obrázek, 
+            name: image, 
+            widget: image
+          - {label: Name, name: name, widget: string}
+          - {label: Avatar, name: avatar, widget: image}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
