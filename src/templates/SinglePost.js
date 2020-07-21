@@ -128,11 +128,7 @@ export const pageQuery = graphql`
         categories {
           category
         }
-        images {
-          image
-          title
-          alt
-        }
+        images {...}
       }
     }
 
