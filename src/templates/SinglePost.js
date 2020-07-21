@@ -63,8 +63,7 @@ export const SinglePostTemplate = ({
   
             <div className="SinglePost--InnerContent">
               <Content source={body} />
-            </div>
-            {images && (
+              {images && (
               <section className="section">
               <div className="container">
                 <h2>Our gallery component</h2>
@@ -72,6 +71,7 @@ export const SinglePostTemplate = ({
               </div>
             </section>
             )}
+            </div>
             <div className="SinglePost--Pagination">
               {prevPostURL && (
                 <Link
