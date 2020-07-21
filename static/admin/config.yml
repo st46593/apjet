@@ -310,11 +310,11 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
           - label: Author
-          name: author
-          widget: object
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Avatar, name: avatar, widget: image}
+            name: author
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Avatar, name: avatar, widget: image}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
