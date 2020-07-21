@@ -308,8 +308,8 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         summary: '{{fields.image}} - {{fields.title}}'
         fields: 
-          {label: Obrázek, name: image, widget: image}
-          {label: Text, name: title, widget: string, required: false}
+          - {label: Obrázek, name: image, widget: image}
+          - {label: Text, name: title, widget: string, required: false}
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
