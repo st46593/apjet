@@ -202,19 +202,13 @@ collections: # A list of collections the CMS should be able to edit
               label: Template,
               name: template,
               widget: hidden,
-              default: DefaultPage,
+              default: BlogIndex,
             }
           - { label: Slug, name: slug, widget: hidden, default: 'components' }
           - { label: Title, name: title, widget: string }
           - { label: Featured Images, name: featuredImage, widget: image }
           - { label: Body, name: body, widget: markdown }
-          - label: 'accordion'
-            name: 'accordion'
-            widget: 'list'
-            fields:
-              - { name: title, label: Titulek, widget: string, default: '' }
-              - { name: image, label: Obrázek, widget: image, required: false}
-              - { name: description, label: Text, widget: markdown }
+          - { label: Subtitle, name: subtitle, widget: markdown }
           - label: 'Meta'
             required: false
             name: 'meta'
