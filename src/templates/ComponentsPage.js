@@ -100,7 +100,6 @@ export const pageQuery = graphql`
         accordion {
           description
           title
-          image
         }
       }
     }
