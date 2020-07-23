@@ -5,11 +5,14 @@ title: This is a test info page
 featuredImage: >-
   https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
 accordion:
-  - image: 'https://ucarecdn.com/33248508-6b2f-4426-8a6b-07b2baf1f3e2/'
-    description: >-
+  - description: >-
+      ![](https://ucarecdn.com/e8875aa2-e5b2-4643-bd5a-86024c14ce2a/)
+
+
       Stroj značky ESAB osazený plasmovou a autogenní hlavou nám umožňuje řezat
       materiály o tloušťkách od 1 do 250 mm. Na stroji lze řezat formát o
       rozměrech 1,5 x 3 m.
+    image: 'https://ucarecdn.com/33248508-6b2f-4426-8a6b-07b2baf1f3e2/'
     title: Tvarové dělení materiálu PLASMA/AUTOGEN
 meta:
   description: test meta description
