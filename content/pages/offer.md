@@ -1,5 +1,5 @@
 ---
-template: DefaultPage
+template: BlogIndex
 slug: offer
 title: Nabízíme
 featuredImage: >-
