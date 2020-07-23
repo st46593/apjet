@@ -52,7 +52,7 @@ export class Navigation extends Component {
             <NavLink to="/">Úvodní stránka</NavLink>
             <NavLink to="/components/">Components</NavLink>
             <NavLink to="/offer/">Nabízíme</NavLink>
-            <NavLink to="/blog/" className="Nav--GroupLink">Z naší výrby</NavLink>
+            <NavLink to="/blog/">Z naší výroby</NavLink>
             <NavLink to="/default/">Default</NavLink>
             <NavLink to="/contact/">Kontakt</NavLink>
           </div>
