@@ -38,14 +38,13 @@ export default class Accordion extends React.Component {
                 <span>{item.title}</span>
                 <ChevronDown />
               </h2>
-              <Image
-                resolutions="small"
-                className="Content--Image"
-                lazy={false}
-                src={item.image ? item.image : null}
-              />
               <div className={'description'}>
-                {item.description} <br />
+                <Image
+                  resolutions="small"
+                  className="Content--Image"
+                  lazy={false}
+                  src={item.image ? item.image : null}
+                />{item.description} <br />
                 {item.link && (
                   <div href={item.link} className="button">
                     {item.linkTitle}
