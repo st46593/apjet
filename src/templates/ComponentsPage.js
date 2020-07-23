@@ -98,8 +98,8 @@ export const pageQuery = graphql`
         videoPoster
         videoTitle
         accordion {
-          title
           description
+          title
           image
         }
       }
