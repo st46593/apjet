@@ -1,5 +1,5 @@
 ---
-template: BlogIndex
+template: Offers
 slug: offer
 title: Nabízíme
 subtitle: This is the blog page subtitle.
