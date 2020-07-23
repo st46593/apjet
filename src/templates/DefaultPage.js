@@ -26,6 +26,12 @@ export const DefaultPageTemplate = ({
         <SVGIcon src="/images/calendar.svg" />
       </div>
     </section>
+
+    <section className="section">
+      <div className="container">
+        <Accordion items={accordion} />
+      </div>
+    </section>
   </main>
 )
 
@@ -48,6 +54,10 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        accordion {
+          title
+          description
+        }
       }
     }
   }
