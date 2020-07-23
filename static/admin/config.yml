@@ -212,9 +212,9 @@ collections: # A list of collections the CMS should be able to edit
             name: 'accordion'
             widget: 'list'
             fields:
-              - { name: Titulek, label: title, widget: string, default: '' }
-              - { name: Obrázek, label: image, widget: image, required: false}
-              - { name: Text, label: description, widget: string }
+              - { name: title, label: Titulek, widget: string, default: '' }
+              - { name: image, label: Obrázek, widget: image, required: false}
+              - { name: description, label: Text, widget: string }
           - label: 'Meta'
             required: false
             name: 'meta'
