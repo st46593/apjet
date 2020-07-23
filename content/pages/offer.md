@@ -5,6 +5,7 @@ title: This is a test info page
 featuredImage: >-
   https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
 accordion:
+  image: 'https://ucarecdn.com/f0977749-27c2-4ef0-be0b-b63a7ece6ac3/'
 meta:
   description: test meta description
   title: test meta title
