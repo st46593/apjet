@@ -214,7 +214,7 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - { name: title, label: Titulek, widget: string, default: '' }
               - { name: image, label: Obrázek, widget: image, required: false}
-              - { name: description, label: Text, widget: string }
+              - { name: description, label: Text, widget: markdown }
           - label: 'Meta'
             required: false
             name: 'meta'
