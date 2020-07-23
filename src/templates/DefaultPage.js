@@ -58,6 +58,7 @@ export const pageQuery = graphql`
         featuredImage
         accordion {
           title
+          image
           description
         }
       }
