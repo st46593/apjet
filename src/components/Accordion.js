@@ -2,7 +2,6 @@ import React from 'react'
 import ChevronDown from 'react-feather/dist/icons/chevron-down'
 import _kebabCase from 'lodash/kebabCase'
 import './Accordion.css'
-import Image from './Image'
 
 export default class Accordion extends React.Component {
   static defaultProps = {
@@ -39,12 +38,7 @@ export default class Accordion extends React.Component {
                 <ChevronDown />
               </h2>
               <div className={'description'}>
-                <Image
-                  resolutions="small"
-                  className="Content--Image"
-                  lazy={false}
-                  src={item.image ? item.image : null}
-                />{item.description} <br />
+               {item.description} <br />
                 {item.link && (
                   <div href={item.link} className="button">
                     {item.linkTitle}
