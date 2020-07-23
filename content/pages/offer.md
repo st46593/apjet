@@ -5,8 +5,11 @@ title: This is a test info page
 featuredImage: >-
   https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
 accordion:
-  - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+  - description: >-
+      Stroj značky ESAB osazený plasmovou a autogenní hlavou nám umožňuje řezat
+      materiály o tloušťkách od 1 do 250 mm. Na stroji lze řezat formát o
+      rozměrech 1,5 x 3 m.
+    title: Tvarové dělení materiálu PLASMA/AUTOGEN
 meta:
   description: test meta description
   title: test meta title
