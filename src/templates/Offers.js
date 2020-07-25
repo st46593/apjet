@@ -11,9 +11,6 @@ export const OffersTemplate = ({
   offers = [],
 }) => (
         <main className="Blog">
-          <h2>{title}</h2>
-          <h3>{subtitle}</h3>
-
           {!!offers.length && (
             <section className="section">
               <div className="container">
