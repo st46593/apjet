@@ -2,53 +2,39 @@
 template: SinglePost
 title: Řezání vodním paprskem
 status: Featured / Published
-featuredImage: 'https://ucarecdn.com/94633346-778b-4474-8039-b18280ec73a3/'
+featuredImage: 'https://ucarecdn.com/b7644f8c-b97a-4350-b894-4fe10bc3e3bd/'
 excerpt: >-
-  Etiam ac quam eget lectus venenatis ullamcorper sit amet non arcu. Nullam
-  interdum arcu vitae augue pulvinar sodales. Sed non dui diam. Quisque lectus
-  est, lobortis ac efficitur vitae, posuere a mauris. Phasellus ac dui
-  pellentesque, lacinia risus ut, imperdiet eros.
+  Nabízíme dělení materiálu vysokotlakým vodním paprskem, který je schopen řezat
+  materiál až o rozměrech 3000×1500 mm a tloušťce do 200 mm.
 meta:
   canonicalLink: ''
   description: test meta description
   noindex: false
   title: test meta title
 ---
-Paragraphs are separated by a blank line.
+![](https://ucarecdn.com/c6fe27db-4a77-4606-90a1-4ce7da7c4b47/)
 
-![Test Image](https://ucarecdn.com/ac9898a0-413a-467b-95fa-0a9959c30710/)
+**Co je ideální řezat vodním paprskem**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Id64silK_7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+* všechny druhy kovů (železné, nerezové, barevné, drahé, kompozity, …)
+* keramiku (dlažby, obklady, sanitární technika, …)
+* těsnění (také kusová výroba složitých tvarů)
+* reklamní nápisy
+* informační systémy
+* interiérové i exteriérové doplňky
+* sklo, plexisklo
+* pěnové materiály
 
-The second paragraph. This is placeholder text that our web designers put here to make sure words appear properly on your website. _Italic_, **bold**, and `monospace`.
+### 
 
-### Unordered lists:
+![](https://ucarecdn.com/1a8bbede-5aa8-4e6c-a535-f0e5e1f6884a/)
 
-* this one
-* that one
-* the other one
+**Výhody vodního paprsku**
 
-### Ordered lists:
-
-1. first item
-2. second item
-3. third item
-
-> Block quotes are written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-
-## Heading 2
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
+* lze zpracovat těžce obrobitelné materiály
+* měkké, křehké či lepivé materiály nejsou problém
+* je dosahována vysoká přesnost řezu
+* řez je kvalitní, odpadá následné opracování
+* nedochází k tepelnému namáhání materiálu a vzniku vnitřního pnutí
+* nedochází k chemickému ovlivnění řezaného materiálu
+* cenově přijatelná ekologická technologie
