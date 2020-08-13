@@ -50,10 +50,10 @@ export class Navigation extends Component {
           </Link>
           <div className="Nav--Links">
             <NavLink to="/">Úvodní stránka</NavLink>
-            <NavLink to="/components/">Components</NavLink>
             <NavLink to="/offer/">Nabízíme</NavLink>
-            <NavLink to="/blog/">Z naší výroby</NavLink>
-            <NavLink to="/default/">Default</NavLink>
+            <NavLink to="/portfolio/">Z naší výroby</NavLink>
+            <NavLink to="/reference/">Reference</NavLink>
+            <NavLink to="/career/">Kariéra</NavLink>
             <NavLink to="/contact/">Kontakt</NavLink>
           </div>
           <button

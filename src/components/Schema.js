@@ -1,11 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import PropTypes, { string } from 'prop-types'
 
 const Schema = ({
   name,
   address,
   email,
-  phone: telephone,
+  ico: ico,
+  dic,
   url,
   logoUrl: logo,
   type,
@@ -17,13 +18,15 @@ const Schema = ({
   const data = {
     '@context': 'http://schema.org/',
     '@type': type,
+    company,
     address: {
       '@type': 'PostalAddress',
       streetAddress: address
     },
     name,
     email,
-    telephone,
+    ico,
+    dic,
     url,
     openingHours,
     logo
@@ -40,10 +43,12 @@ const Schema = ({
 Schema.propTypes = {
   type: PropTypes.string, // schema type e.g. LocalBusiness
   name: PropTypes.string,
+  company: PropTypes.string,
   url: PropTypes.string,
   address: PropTypes.string,
   email: PropTypes.string,
-  phone: PropTypes.string,
+  ico: PropTypes.string,
+  dic: PropTypes.string,
   logoUrl: PropTypes.string
 }
 

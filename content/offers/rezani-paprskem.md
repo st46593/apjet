@@ -1,5 +1,6 @@
 ---
 template: SinglePost
+parent: offer
 title: Řezání vodním paprskem
 status: Featured / Published
 featuredImage: 'https://ucarecdn.com/b7644f8c-b97a-4350-b894-4fe10bc3e3bd/'
@@ -31,7 +32,8 @@ meta:
 
 **Výhody vodního paprsku**
 
-* lze zpracovat těžce obrobitelné materiály
+* 
+lze zpracovat těžce obrobitelné materiály
 * měkké, křehké či lepivé materiály nejsou problém
 * je dosahována vysoká přesnost řezu
 * řez je kvalitní, odpadá následné opracování

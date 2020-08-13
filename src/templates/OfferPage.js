@@ -5,7 +5,7 @@ import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
-export const OffersTemplate = ({
+export const OfferPageTemplate = ({
   title,
   subtitle,
   offers = [],
@@ -21,13 +21,12 @@ export const OffersTemplate = ({
         </main>
       )
 
-// Export Default Offers for front-end
-const Offers = ({ data: { page, offers } }) => (
+const OfferPage = ({ data: { page, offers } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <OffersTemplate
+    <OfferPageTemplate
       {...page}
       {...page.fields}
       {...page.frontmatter}
@@ -40,14 +39,14 @@ const Offers = ({ data: { page, offers } }) => (
   </Layout>
 )
 
-export default Offers
+export default OfferPage
 
 export const pageQuery = graphql`
   ## Query for BlogIndex data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query Offers($id: String!) {
+  query OfferPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {

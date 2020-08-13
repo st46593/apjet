@@ -6,10 +6,10 @@ import { HomePageTemplate } from '../templates/HomePage'
 import { ComponentsPageTemplate } from '../templates/ComponentsPage'
 import { ContactPageTemplate } from '../templates/ContactPage'
 import { DefaultPageTemplate } from '../templates/DefaultPage'
-import { BlogIndexTemplate } from '../templates/BlogIndex'
+import { PortfolioPageTemplate } from '../templates/PortfolioPage'
 import { SinglePostTemplate } from '../templates/SinglePost'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
-import { OffersTemplate } from '../templates/Offers'
+import { OfferPageTemplate } from '../templates/OfferPage'
 
 CMS.registerMediaLibrary(uploadcare)
 
@@ -37,11 +37,11 @@ CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
   <DefaultPageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
-  <BlogIndexTemplate {...entry.toJS().data} />
+  <PortfolioPageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('posts', ({ entry }) => (
   <SinglePostTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('offer-page', ({ entry }) => (
-  <OffersTemplate {...entry.toJS().data} />
+  <OfferPageTemplate {...entry.toJS().data} />
 ))

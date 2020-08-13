@@ -5,7 +5,6 @@ import qs from 'qs'
 
 import PageHeader from '../components/PageHeader'
 import PostSection from '../components/PostSection'
-import PostCategoriesNav from '../components/PostCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
@@ -34,34 +33,12 @@ export const byCategory = (posts, title, contentType) => {
   return isCategory ? posts.filter(byCategory) : posts
 }
 
-// Export Template for use in CMS preview
-export const BlogIndexTemplate = ({
+export const PortfolioPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  posts = [],
-  postCategories = [],
-  enableSearch = true,
-  contentType
+  posts = []
 }) => (
-  <Location>
-    {({ location }) => {
-      let filteredPosts =
-        posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
-          : []
-
-      let queryObj = location.search.replace('?', '')
-      queryObj = qs.parse(queryObj)
-
-      if (enableSearch && queryObj.s) {
-        const searchTerm = queryObj.s.toLowerCase()
-        filteredPosts = filteredPosts.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
-        )
-      }
-
-      return (
         <main className="Blog">
           <PageHeader
             title={title}
@@ -69,34 +46,22 @@ export const BlogIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!postCategories.length && (
-            <section className="section thin">
-              <div className="container">
-                <PostCategoriesNav enableSearch categories={postCategories} />
-              </div>
-            </section>
-          )}
-
           {!!posts.length && (
             <section className="section">
               <div className="container">
-                <PostSection posts={filteredPosts} />
+                <PostSection posts={posts} />
               </div>
             </section>
           )}
         </main>
-      )
-    }}
-  </Location>
 )
 
-// Export Default BlogIndex for front-end
-const BlogIndex = ({ data: { page, posts, postCategories } }) => (
+const PortfolioPage = ({ data: { page, posts, postCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <BlogIndexTemplate
+    <PortfolioPageTemplate
       {...page}
       {...page.fields}
       {...page.frontmatter}
@@ -114,14 +79,14 @@ const BlogIndex = ({ data: { page, posts, postCategories } }) => (
   </Layout>
 )
 
-export default BlogIndex
+export default PortfolioPage
 
 export const pageQuery = graphql`
-  ## Query for BlogIndex data
+  ## Query for PortfolioPage data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query BlogIndex($id: String!) {
+  query PortfolioPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {

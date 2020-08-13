@@ -1,12 +1,11 @@
 import React from 'react'
-import { MapPin, Smartphone, Mail } from 'react-feather'
+import { MapPin, Mail, FileText, RefreshCcw, Home } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
 import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
-import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
+import Accordion from '../components/Accordion'
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
@@ -14,57 +13,58 @@ export const ContactPageTemplate = ({
   body,
   title,
   subtitle,
-  featuredImage,
+  company,
   address,
-  phone,
+  ico,
+  dic,
   email,
-  locations
+  contacts
 }) => (
-  <main className="Contact">
-    <PageHeader
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    />
-    <section className="section Contact--Section1">
-      <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
+    <main className="Contact">
+      <section className="section Contact--Section1">
+        <div className="container Contact--Section1--Container">
+          <div>
+            <h1>{title}</h1>
+            <Content source={body} src={subtitle}/>
+            {company && (
+              <div className="Contact--Details--Item">
+                <Home /> {company}
+              </div>
             )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
+            {address && (
+              <div className="Contact--Details--Item">
+                <MapPin /> {address}
+              </div>
+            )}
+            {ico && (
+              <div className="Contact--Details--Item">
+                <FileText /> {ico}
+              </div>
+            )}
+            {dic && (
+              <div className="Contact--Details--Item">
+                <RefreshCcw /> {dic}
+              </div>
             )}
             {email && (
               <a className="Contact--Details--Item" href={`mailto:${email}`}>
                 <Mail /> {email}
               </a>
             )}
+            <section className="section">
+              <h2>Kontakty</h2>
+              {contacts && (
+                <Accordion items={contacts} />
+              )}
+            </section>
+          </div>
+          <div>
+            <FormSimpleAjax name="Simple Form Ajax" />
           </div>
         </div>
-
-        <div>
-          <FormSimpleAjax name="Simple Form Ajax" />
-        </div>
-      </div>
-    </section>
-
-    <GoogleMap locations={locations} />
-  </main>
-)
+      </section>
+    </main>
+  )
 
 const ContactPage = ({ data: { page } }) => (
   <Layout
@@ -87,9 +87,16 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
+        company
         address
-        phone
+        ico
+        dic
         email
+        contacts {
+          name
+          phone
+          email
+        }
         locations {
           mapLink
           lat

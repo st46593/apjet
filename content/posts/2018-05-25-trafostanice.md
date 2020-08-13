@@ -1,9 +1,10 @@
 ---
 template: SinglePost
+parent: portfolio
 title: Trafostanice
 status: Published
 date: '2020-07-18'
-featuredImage: ''
+featuredImage: 'https://ucarecdn.com/798aa828-e794-47c7-bf76-18e80123945a/'
 excerpt: >-
   Díky našim technologiím jsme mohli zpracovat kompletní výrobu plechových
   součástí trafostanice, včetně nastřelení vodících šroubů a vlisování

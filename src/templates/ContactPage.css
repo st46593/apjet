@@ -7,12 +7,19 @@
 
 .Contact--Details--Item {
   display: flex;
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-top: 1px solid var(--lightGrey);
   font-weight: 500;
   text-decoration: none;
-  color: inherit;
+  color: var(--primary);
   transition: color 0.2s ease-in-out;
+}
+
+.Contact--Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .Contact--Details--Item:hover,

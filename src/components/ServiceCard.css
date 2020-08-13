@@ -1,0 +1,18 @@
+.ServiceCard {
+  text-decoration: none;
+  background: white;
+  color: inherit;
+  overflow: hidden;
+  max-width: 40rem;
+}
+
+.ServiceCard--Image {
+  margin: auto;
+  width: 10rem;
+  height: 10rem;
+}
+
+.ServiceCard--Content {
+  padding: 0 2.5rem 2.5rem;
+  text-align: center;
+}
