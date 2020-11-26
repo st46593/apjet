@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/thriveweb/yellowcake"
   },
+  "resolutions": {
+    "sharp": "0.24.0"
+  },
   "dependencies": {
     "@reach/router": "^1.2.1",
     "dom-form-serializer": "^1.0.7",
