@@ -34,10 +34,7 @@ export const SinglePostTemplate = ({
             )}
   
             <div className="SinglePost--InnerContent">
-              <Content source={body} />
-              {images && (
-                <Gallery images={images} />
-            )}
+              {console.log(images)}
             </div>
             <div className="SinglePost--Pagination">
               {prevPostURL && (
