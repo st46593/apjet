@@ -97,13 +97,8 @@ export const pageQuery = graphql`
         parent
         subtitle
         date(formatString: "MMMM Do, YYYY")
-        categories {
-          category
-        }
         images {
-          image
-          alt
-          title
+          gallery
         }
       }
     }

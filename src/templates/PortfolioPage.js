@@ -114,9 +114,6 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
-            categories {
-              category
-            }
             featuredImage
           }
         }

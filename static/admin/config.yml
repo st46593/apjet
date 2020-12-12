@@ -343,14 +343,20 @@ collections: # A list of collections the CMS should be able to edit
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
       - label: "Galerie"
-        name: "gallery"
-        widget: "image"
-        media_library: { 
-          config: {
-            multiple: true,
-            previewStep: false
-          } 
-        }
+        name: "images"
+        widget: "list"
+        summary: '{{fields.image}}'
+        fields:
+          - {
+              label: Obrázky, 
+              name: gallery,
+              widget: image,
+              media_library: { 
+                config: {
+                  multiple: true,
+                  previewStep: false
+                } 
+              }
       - label: 'Meta'
         required: false
         name: 'meta'
