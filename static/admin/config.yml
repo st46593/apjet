@@ -357,6 +357,7 @@ collections: # A list of collections the CMS should be able to edit
                   previewStep: false
                 } 
               }
+          }
       - label: 'Meta'
         required: false
         name: 'meta'
