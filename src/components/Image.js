@@ -165,7 +165,7 @@ class Image extends React.Component {
 }
 
 Image.propTypes = {
-  alt: PropTypes.string.isRequired
+  alt: PropTypes.string
 }
 
 export default Image

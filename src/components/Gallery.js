@@ -9,18 +9,6 @@ import _kebabCase from 'lodash/kebabCase'
 import './Gallery.css'
 import 'react-photoswipe/lib/photoswipe.css'
 
-export const query = graphql`
-  fragment Gallery on MarkdownRemark {
-    frontmatter {
-      gallery {
-        alt
-        image
-        title
-      }
-    }
-  }
-`
-
 export default class Gallery extends Component {
   state = {
     loaded: false,
@@ -35,14 +23,14 @@ export default class Gallery extends Component {
   }
 
   getImageInfo = (img, index) =>
-    fetch(img.image + '-/json/')
+    fetch(img + '-/json/')
       .then(res => res.json())
       .then(
         result => {
           const newImagesArr = [...this.state.sliderImages]
           newImagesArr[index] = {
-            src: img.image,
-            title: img.title,
+            src: img,
+            //title: img.title,
             w: result.width,
             h: result.height
           }
@@ -80,14 +68,13 @@ export default class Gallery extends Component {
               {images.map((image, index) => (
                 <figure
                   className="Gallery--Item"
-                  key={_kebabCase(image.alt) + '-' + index}
+                  key={_kebabCase(image) + '-' + index}
                   onClick={() => this.isOpen(true, index)}
                 >
                   <div>
                     <Image
                       resolutions="small"
-                      src={image.image}
-                      alt={image.alt}
+                      src={image}
                     />
                   </div>
                   {image.title && <figcaption>{image.title}</figcaption>}

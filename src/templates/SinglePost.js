@@ -16,49 +16,53 @@ export const SinglePostTemplate = ({
   prevPostURL,
   images = []
 }) => (
-    <main>
-      <article
-        className="SinglePost section light"
-        itemScope
-        itemType="http://schema.org/BlogPosting"
-      >
-        <div className="container skinny">
-          <Link className="SinglePost--BackButton" to={"/" + parent + "/"}>
-            <ChevronLeft /> ZPĚT
+  <main>
+    <article
+      className="SinglePost section light"
+      itemScope
+      itemType="http://schema.org/BlogPosting"
+    >
+      <div className="container skinny">
+        <Link className="SinglePost--BackButton" to={"/" + parent + "/"}>
+          <ChevronLeft /> ZPĚT
         </Link>
-          <div className="SinglePost--Content relative">
-            {title && (
-              <h1 className="SinglePost--Title" itemProp="title">
-                {title}
-              </h1>
+        <div className="SinglePost--Content relative">
+          {title && (
+            <h1 className="SinglePost--Title" itemProp="title">
+              {title}
+            </h1>
+          )}
+
+          <div className="SinglePost--InnerContent">
+            <Content source={body} />
+            {images &&
+              images.gallery && (
+                <Gallery images={images.gallery} />
+              )}
+          </div>
+          <div className="SinglePost--Pagination">
+            {prevPostURL && (
+              <Link
+                className="SinglePost--Pagination--Link prev"
+                to={prevPostURL}
+              >
+                Předchozí projekt
+              </Link>
             )}
-  
-            <div className="SinglePost--InnerContent">
-              {console.log(images)}
-            </div>
-            <div className="SinglePost--Pagination">
-              {prevPostURL && (
-                <Link
-                  className="SinglePost--Pagination--Link prev"
-                  to={prevPostURL}
-                >
-                  Předchozí projekt
-                </Link>
-              )}
-              {nextPostURL && (
-                <Link
-                  className="SinglePost--Pagination--Link next"
-                  to={nextPostURL}
-                >
-                  Následující projekt
-                </Link>
-              )}
-            </div>
+            {nextPostURL && (
+              <Link
+                className="SinglePost--Pagination--Link next"
+                to={nextPostURL}
+              >
+                Následující projekt
+              </Link>
+            )}
           </div>
         </div>
-      </article>
-    </main>
-  )
+      </div>
+    </article>
+  </main>
+)
 
 // Export Default SinglePost for front-end
 const SinglePost = ({ data: { post, allPosts } }) => {
