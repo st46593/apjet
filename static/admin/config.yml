@@ -137,7 +137,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/offer.md'
-        label: 'Z naší výroby'
+        label: 'Nabídka'
         name: 'offer-page'
         fields:
           - {
@@ -261,7 +261,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: posts
-    label: Nabídka
+    label: Z naší výroby
     editor:
       preview: true
     folder: content/posts
