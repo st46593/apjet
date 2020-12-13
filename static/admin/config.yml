@@ -137,7 +137,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/offer.md'
-        label: 'Nabídka'
+        label: 'Z naší výroby'
         name: 'offer-page'
         fields:
           - {
