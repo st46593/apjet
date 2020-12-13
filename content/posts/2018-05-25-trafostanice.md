@@ -10,7 +10,7 @@ excerpt: >-
   součástí trafostanice, včetně nastřelení vodících šroubů a vlisování
   nýtovacích matic.
 images:
-    gallery:
+  - gallery:
       - 'https://ucarecdn.com/f0977749-27c2-4ef0-be0b-b63a7ece6ac3/'
       - 'https://ucarecdn.com/798aa828-e794-47c7-bf76-18e80123945a/'
       - 'https://ucarecdn.com/30e69d66-0575-4d32-b593-2291258b030c/'

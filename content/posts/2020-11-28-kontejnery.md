@@ -7,7 +7,7 @@ date: '2020-11-28'
 featuredImage: 'https://ucarecdn.com/3341d3cb-e395-470d-b2e3-886750453e51/'
 excerpt: Kontejnery
 images:
-    gallery:
+    - gallery:
       - 'https://ucarecdn.com/4f448bfd-2dd9-470f-b107-89ae0dac2d01/'
       - 'https://ucarecdn.com/7510b736-6d51-4b91-84b7-3b81265f6776/'
       - 'https://ucarecdn.com/d7defd07-8901-4a5f-b58f-82305f04324f/'

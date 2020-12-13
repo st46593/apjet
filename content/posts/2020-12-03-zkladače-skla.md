@@ -7,7 +7,7 @@ date: '2020-12-03'
 featuredImage: 'https://ucarecdn.com/0602d20c-51d6-4f62-a297-33951719173b/'
 excerpt: Zkladače skla
 images:
-    gallery:
+  - gallery:
       - 'https://ucarecdn.com/7e78c084-6f3e-454a-95c5-7571eba290e3/'
       - 'https://ucarecdn.com/323f0174-1437-4e01-97ae-ab92abf01fb5/'
       - 'https://ucarecdn.com/6ab94b8a-db53-4836-9aa1-5bb2c088cbb0/'
