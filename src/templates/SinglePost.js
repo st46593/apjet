@@ -35,9 +35,8 @@ export const SinglePostTemplate = ({
   
             <div className="SinglePost--InnerContent">
             <Content source={body} />
-            {images && images[0] && 
-              images[0].gallery && (
-                <Gallery images={images[0].gallery} />
+            {images && (
+                <Gallery images={images.flatMap(img => img.gallery)} />
               )}
             </div>
             <div className="SinglePost--Pagination">
