@@ -290,6 +290,68 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
+  
+      - file: 'content/pages/career.md'
+        label: 'Kariéra'
+        name: 'career-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: CareerPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: 'career' }
+          - { label: Titulek, name: title, widget: string }
+          - {
+              label: Hlavní obrázek,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
+          - name: job_offers
+            label: Volné pozice
+            widget: list
+            fields:
+              - {
+                  name: title,
+                  label: Název pozice,
+                  widget: string,
+                  required: true,
+                  default: '',
+                }
+              - {
+                  name: content,
+                  label: Náplň pozice,
+                  widget: markdown,
+                  required: true
+                }
+          - label: 'Meta'
+            required: false
+            name: 'meta'
+            widget: 'object'
+            fields:
+              - { label: Title, name: title, widget: string, required: false }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: text,
+                  required: false,
+                }
+              - {
+                  label: Canonical Link,
+                  name: canonicalLink,
+                  widget: string,
+                  required: false,
+                }
+              - {
+                  label: Noindex,
+                  name: noindex,
+                  widget: boolean,
+                  required: false,
+                }
+
   - name: infoPages
     label: Info Page
     editor:

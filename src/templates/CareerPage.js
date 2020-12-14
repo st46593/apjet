@@ -31,7 +31,7 @@ export const byCategory = (posts, title, contentType) => {
   return isCategory ? posts.filter(byCategory) : posts
 }
 
-export const PortfolioPageTemplate = ({
+export const CareerPageTemplate = ({
   title,
   subtitle,
   featuredImage,
@@ -54,12 +54,12 @@ export const PortfolioPageTemplate = ({
         </main>
 )
 
-const PortfolioPage = ({ data: { page, posts, postCategories } }) => (
+const CareerPage = ({ data: { page, posts, postCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <PortfolioPageTemplate
+    <CareerPageTemplate
       {...page}
       {...page.fields}
       {...page.frontmatter}
@@ -68,23 +68,18 @@ const PortfolioPage = ({ data: { page, posts, postCategories } }) => (
         ...post.node.frontmatter,
         ...post.node.fields
       }))}
-      postCategories={postCategories.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
-      }))}
     />
   </Layout>
 )
 
-export default PortfolioPage
+export default CareerPage
 
 export const pageQuery = graphql`
-  ## Query for PortfolioPage data
+  ## Query for CareerPage data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query PortfolioPage($id: String!) {
+  query CareerPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {
@@ -100,7 +95,7 @@ export const pageQuery = graphql`
     }
 
     posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
+      filter: { fields: { contentType: { eq: "careers" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -113,21 +108,6 @@ export const pageQuery = graphql`
             title
             date
             featuredImage
-          }
-        }
-      }
-    }
-    postCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "postCategories" } } }
-      sort: { order: ASC, fields: [frontmatter___title] }
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
           }
         }
       }

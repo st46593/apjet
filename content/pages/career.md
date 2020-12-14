@@ -1,5 +1,5 @@
 ---
-template: DefaultPage
+template: CareerPage
 slug: career
 title: Kariéra
 subtitle: Aktuální volné pozice.

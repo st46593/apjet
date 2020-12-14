@@ -9,6 +9,7 @@ import { PortfolioPageTemplate } from '../templates/PortfolioPage'
 import { SinglePostTemplate } from '../templates/SinglePost'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
 import { OfferPageTemplate } from '../templates/OfferPage'
+import { CareerPageTemplate } from '.../templates/CareerPage'
 
 CMS.registerMediaLibrary(uploadcare)
 
@@ -40,4 +41,7 @@ CMS.registerPreviewTemplate('posts', ({ entry }) => (
 ))
 CMS.registerPreviewTemplate('offer-page', ({ entry }) => (
   <OfferPageTemplate {...entry.toJS().data} />
+))
+CMS.registerPreviewTemplate('career-page', ({ entry }) => (
+  <CareerPageTemplate {...entry.toJS().data} />
 ))
