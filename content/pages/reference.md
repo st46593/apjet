@@ -2,8 +2,7 @@
 template: ReferencePage
 slug: reference
 title: Spolupracujeme s
-featuredImage: >-
-  https://ucarecdn.com/0a485165-65c4-42ee-bf35-b93fbaf0fd2e/-/preview/-/rotate/270/
+featuredImage: 'https://ucarecdn.com/7760d1ea-0fa9-4eba-8feb-e32de0a7ed4a/'
 references:
   - image: 'https://ucarecdn.com/1aa9360e-cb20-4017-a84b-f9bc40f72a06/'
     link: 'http://www.hkeng.cz/'
