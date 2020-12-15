@@ -5,37 +5,11 @@ import PageHeader from '../components/PageHeader'
 import PostSection from '../components/PostSection'
 import Layout from '../components/Layout'
 
-/**
- * Filter posts by date. Feature dates will be fitered
- * When used, make sure you run a cronejob each day to show schaduled content. See docs
- *
- * @param {posts} object
- */
-export const byDate = posts => {
-  const now = Date.now()
-  return posts.filter(post => Date.parse(post.date) <= now)
-}
-
-/**
- * filter posts by category.
- *
- * @param {posts} object
- * @param {title} string
- * @param {contentType} string
- */
-export const byCategory = (posts, title, contentType) => {
-  const isCategory = contentType === 'postCategories'
-  const byCategory = post =>
-    post.categories &&
-    post.categories.filter(cat => cat.category === title).length
-  return isCategory ? posts.filter(byCategory) : posts
-}
-
 export const CareerPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  posts = []
+  careers = []
 }) => (
         <main className="Blog">
           <PageHeader
@@ -44,17 +18,17 @@ export const CareerPageTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!posts.length && (
+          {!!careers.length && (
             <section className="section">
               <div className="container">
-                <PostSection posts={posts} />
+                <PostSection posts={careers} />
               </div>
             </section>
           )}
         </main>
 )
 
-const CareerPage = ({ data: { page, posts, postCategories } }) => (
+const CareerPage = ({ data: { page, careers } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -63,11 +37,6 @@ const CareerPage = ({ data: { page, posts, postCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      posts={posts.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
-      }))}
     />
   </Layout>
 )
@@ -75,10 +44,6 @@ const CareerPage = ({ data: { page, posts, postCategories } }) => (
 export default CareerPage
 
 export const pageQuery = graphql`
-  ## Query for CareerPage data
-  ## Use GraphiQL interface (http://localhost:8000/___graphql)
-  ## $id is processed via gatsby-node.js
-  ## query name must be unique to this file
   query CareerPage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
@@ -91,24 +56,9 @@ export const pageQuery = graphql`
         template
         subtitle
         featuredImage
-      }
-    }
-
-    posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "careers" } } }
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date
-            featuredImage
-          }
+        jobOffers {
+          content
+          title
         }
       }
     }

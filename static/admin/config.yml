@@ -310,7 +310,7 @@ collections: # A list of collections the CMS should be able to edit
               options:
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
-          - name: job_offers
+          - name: jobOffers
             label: Volné pozice
             widget: list
             fields:
