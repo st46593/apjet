@@ -327,7 +327,7 @@ collections: # A list of collections the CMS should be able to edit
                   widget: markdown,
                   required: true,
                   options: {
-                    buttons: ["heading-three"]
+                    buttons: ['heading-three', 'heading-four']
                   }
                 }
           - label: 'Meta'

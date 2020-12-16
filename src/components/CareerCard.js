@@ -18,7 +18,7 @@ const CareerCard = ({
       </div>
     )}
     <div className="CareerCard--Content">
-      {title && <h2 className="CareerCard--Title">{title}</h2>}
+      {title && <h3 className="CareerCard--Title">{title}</h3>}
       {body && <Content className="CareerCard--Excerpt" source={body} />}
     </div>
   </div>
