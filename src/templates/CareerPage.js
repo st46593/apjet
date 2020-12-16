@@ -2,14 +2,14 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import PostSection from '../components/PostSection'
+import CareerSection from '../components/CareerSection'
 import Layout from '../components/Layout'
 
 export const CareerPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  careers = []
+  jobOffers = []
 }) => (
         <main className="Blog">
           <PageHeader
@@ -18,24 +18,22 @@ export const CareerPageTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!careers.length && (
+          {!!jobOffers.length && (
             <section className="section">
               <div className="container">
-                <PostSection posts={careers} />
+                <CareerSection jobOffers={jobOffers} />
               </div>
             </section>
           )}
         </main>
 )
 
-const CareerPage = ({ data: { page, careers } }) => (
+const CareerPage = ({ data: { page } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
     <CareerPageTemplate
-      {...page}
-      {...page.fields}
       {...page.frontmatter}
     />
   </Layout>
