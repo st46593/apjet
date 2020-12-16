@@ -55,7 +55,7 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         jobOffers {
-          content
+          body
           title
         }
       }
