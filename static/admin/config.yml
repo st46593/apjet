@@ -322,7 +322,7 @@ collections: # A list of collections the CMS should be able to edit
                   default: '',
                 }
               - {
-                  name: content,
+                  name: body,
                   label: Náplň pozice,
                   widget: markdown,
                   required: true

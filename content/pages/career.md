@@ -4,7 +4,7 @@ slug: career
 title: Kariéra
 featuredImage: 'https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/'
 jobOffers:
-  - content: |-
+  - body: |-
       ## Pracovní náplň:
 
       * Obsluha vysekávacího a ohraňovacího lisu
