@@ -325,7 +325,10 @@ collections: # A list of collections the CMS should be able to edit
                   name: body,
                   label: Náplň pozice,
                   widget: markdown,
-                  required: true
+                  required: true,
+                  options: {
+                    buttons: ["heading-three"]
+                  }
                 }
           - label: 'Meta'
             required: false

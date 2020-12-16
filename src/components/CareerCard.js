@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Image from './Image'
+import Content from './Content'
 import './CareerCard.css'
 
 const CareerCard = ({
   featuredImage,
   title,
-  content,
+  body,
   className = '',
   ...props
 }) => (
@@ -18,8 +18,8 @@ const CareerCard = ({
       </div>
     )}
     <div className="CareerCard--Content">
-      {title && <h3 className="CareerCard--Title">{title}</h3>}
-      {content && <div className="CareerCard--Excerpt">{content}</div>}
+      {title && <h2 className="CareerCard--Title">{title}</h2>}
+      {body && <Content className="CareerCard--Excerpt" source={body} />}
     </div>
   </div>
 )
