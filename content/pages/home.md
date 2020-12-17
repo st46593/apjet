@@ -1,19 +1,18 @@
 ---
 template: HomePage
-slug: ''
+slug: ""
 title: AP Jet s. r. o.
-featuredImage: 'https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/'
-subtitle: >-
-  AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC obráběním a
-  zámečnickými pracemi
-services: 
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/raketa_Kreslic%C3%AD-pl%C3%A1tno-1-1.png'
+featuredImage: https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/
+subtitle: AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC
+  obráběním a zámečnickými pracemi
+services:
+  - image: https://ucarecdn.com/431839bb-e80a-4313-a615-60053e52e8b0/
     title: RYCHLOST
     description: Vaše přání vyřídíme co nejrychleji!
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/zkusenosti-02-02.png'
+  - image: https://ucarecdn.com/e6564a3c-5101-4003-a083-fbb170dcfe39/
     title: ZKUŠENOSTI
     description: Několikaleté zkušenosti v oboru!
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/zodpovednost-03-03.png'
+  - image: https://ucarecdn.com/5d65e8ed-6769-4999-bb99-edcdd4e40a32/
     title: SPOLEHLIVOST
     description: Co slíbíme, to splníme!
 meta:
