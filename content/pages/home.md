@@ -1,23 +1,21 @@
 ---
 template: HomePage
-slug: ""
+slug: ''
 title: AP Jet s. r. o.
-featuredImage: https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/
-subtitle: AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC
-  obráběním a zámečnickými pracemi
+featuredImage: 'https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/'
+subtitle: >-
+  AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC obráběním a
+  zámečnickými pracemi
 services:
-  - image: https://ucarecdn.com/431839bb-e80a-4313-a615-60053e52e8b0/
+  - description: Vaše přání vyřídíme co nejrychleji!
+    image: 'https://ucarecdn.com/62d813ca-839c-42d9-9b7f-cee7bea37009/'
     title: RYCHLOST
-    description: Vaše přání vyřídíme co nejrychleji!
-  - image: https://ucarecdn.com/e6564a3c-5101-4003-a083-fbb170dcfe39/
+  - description: Několikaleté zkušenosti v oboru!
+    image: 'https://ucarecdn.com/e6564a3c-5101-4003-a083-fbb170dcfe39/'
     title: ZKUŠENOSTI
-    description: Několikaleté zkušenosti v oboru!
-  - image: https://ucarecdn.com/5d65e8ed-6769-4999-bb99-edcdd4e40a32/
+  - description: 'Co slíbíme, to splníme!'
+    image: 'https://ucarecdn.com/5d65e8ed-6769-4999-bb99-edcdd4e40a32/'
     title: SPOLEHLIVOST
-    description: Co slíbíme, to splníme!
-meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
 ---
 **O nás**
 
