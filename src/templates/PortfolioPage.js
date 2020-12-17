@@ -37,7 +37,7 @@ export const PortfolioPageTemplate = ({
   featuredImage,
   posts = []
 }) => (
-        <main className="Blog">
+        <main className="PortfolioPage">
           <PageHeader
             title={title}
             subtitle={subtitle}

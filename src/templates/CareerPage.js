@@ -13,7 +13,7 @@ export const CareerPageTemplate = ({
   careerInfo,
   jobOffers = []
 }) => (
-        <main className="Blog">
+        <main className="CareerPage">
           {jobOffers.length > 0 ? (
             <section className="section">
               <div className="container">

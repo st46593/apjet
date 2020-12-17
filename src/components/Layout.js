@@ -73,7 +73,6 @@ export default ({ children, meta, title }) => {
             />
 
             <Nav subNav={subNav} />
-
             <Fragment>{children}</Fragment>
 
             <Footer />

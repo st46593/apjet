@@ -1,0 +1,13 @@
+.FacebookCorner {
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  margin-top: -0.5rem;
+  z-index: 3;
+}
+.FacebookCorner svg {
+  color: #fff;
+  border: 0;
+  max-width: 6rem;
+  max-height: 6rem;
+}
