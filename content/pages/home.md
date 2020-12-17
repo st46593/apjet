@@ -14,7 +14,7 @@ services:
     image: 'https://ucarecdn.com/cd27b371-bfbe-4001-b09d-049661da8170/'
     title: ZKUŠENOSTI
   - description: 'Co slíbíme, to splníme!'
-    image: 'https://ucarecdn.com/408b6fc5-f6a0-4422-af5b-938874be1645/'
+    image: 'https://ucarecdn.com/cddb7419-ab65-476d-886f-824693881cf7/'
     title: SPOLEHLIVOST
 ---
 **O nás**
