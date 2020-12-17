@@ -11,7 +11,7 @@ services:
     image: 'https://ucarecdn.com/77c10066-2fd7-44e4-8d83-ae49b3fe72a1/'
     title: RYCHLOST
   - description: Několikaleté zkušenosti v oboru!
-    image: 'https://ucarecdn.com/70eef109-71fa-407b-9210-8921f4dc7bbd/'
+    image: 'https://ucarecdn.com/a3130c68-113b-46a6-993d-f58e29a27dd9/'
     title: ZKUŠENOSTI
   - description: 'Co slíbíme, to splníme!'
     image: 'https://ucarecdn.com/408b6fc5-f6a0-4422-af5b-938874be1645/'
