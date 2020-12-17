@@ -176,7 +176,7 @@ collections: # A list of collections the CMS should be able to edit
                 }
 
       - file: 'content/pages/home.md'
-        label: 'Home Page'
+        label: 'Úvodní stránka'
         name: 'home-page'
         fields:
           - {
@@ -186,41 +186,18 @@ collections: # A list of collections the CMS should be able to edit
               default: HomePage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
-          - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown, required: false }
-          - { label: Body, name: body, widget: markdown }
-          - label: 'Accordion'
-            name: 'accordion'
+          - { label: Nadpis, name: title, widget: string }
+          - { label: Úvodní obrázek, name: featuredImage, widget: image }
+          - { label: Podtitulek, name: subtitle, widget: markdown, required: false }
+          - { label: Obsah, name: body, widget: markdown }
+          - label: 'Služby'
+            name: 'services'
             widget: 'list'
             required: false
             fields:
-              - { label: 'Title', name: 'title', widget: 'string' }
-              - { label: Content, name: content, widget: text }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
+              - { label: 'Služba', name: 'title', widget: 'string' }
+              - { label: Popisek, name: content, widget: text }
+              - { label: Obrázek, name: image, widget: image }
      
       - file: 'content/pages/reference.md'
         label: 'Reference'
