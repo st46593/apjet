@@ -11,10 +11,10 @@ services:
     image: 'https://ucarecdn.com/77c10066-2fd7-44e4-8d83-ae49b3fe72a1/'
     title: RYCHLOST
   - description: Několikaleté zkušenosti v oboru!
-    image: 'https://ucarecdn.com/e6564a3c-5101-4003-a083-fbb170dcfe39/'
+    image: 'https://ucarecdn.com/cd27b371-bfbe-4001-b09d-049661da8170/'
     title: ZKUŠENOSTI
   - description: 'Co slíbíme, to splníme!'
-    image: 'https://ucarecdn.com/5d65e8ed-6769-4999-bb99-edcdd4e40a32/'
+    image: 'https://ucarecdn.com/68dd0d3b-6566-4a6a-8d2f-df9727536c28/'
     title: SPOLEHLIVOST
 ---
 **O nás**
