@@ -1,9 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
 import CareerSection from '../components/CareerSection'
 import Layout from '../components/Layout'
+import './CareerPage.css'
 
 export const CareerPageTemplate = ({
   title,
@@ -12,19 +12,14 @@ export const CareerPageTemplate = ({
   jobOffers = []
 }) => (
         <main className="Blog">
-          <PageHeader
-            title={title}
-            subtitle={subtitle}
-            backgroundImage={featuredImage}
-          />
-
-          {!!jobOffers.length && (
+          {jobOffers.length > 0 ? (
             <section className="section">
               <div className="container">
+                <h4 className="Career--Header">Aktuálně nabízíme tyto pozice</h4>
                 <CareerSection jobOffers={jobOffers} />
               </div>
             </section>
-          )}
+          ) : <h4 className="Career--Header">Aktuálně nejsou k dispozici žádné pozice.</h4>}
         </main>
 )
 

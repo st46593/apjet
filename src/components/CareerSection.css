@@ -24,14 +24,14 @@
 }
 
 .CareerSection--Grid > * {
-  width: calc(33.33% - 2rem);
+  width: calc(45% - 2rem);
   margin-bottom: 4rem;
 }
 
 @supports (display: grid) {
   .CareerSection--Grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
   }
 

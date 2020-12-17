@@ -7,10 +7,10 @@ class CareerSection extends React.Component {
   static defaultProps = {
     jobOffers: [],
     title: '',
-    limit: 12,
+    limit: 4,
     showLoadMore: true,
     loadMoreTitle: 'Načti více',
-    perPageLimit: 12
+    perPageLimit: 4
   }
 
   state = {
