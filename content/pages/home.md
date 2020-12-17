@@ -8,8 +8,7 @@ subtitle: >-
   zámečnickými pracemi
 services:
   - description: Vaše přání vyřídíme co nejrychleji!
-    image: >-
-      https://ucarecdn.com/9834aaaf-1b62-44ef-8129-91125b32d539/-/preview/-/enhance/100/
+    image: 'https://ucarecdn.com/7d8c4298-05b6-4b9f-876c-b963e06f40fb/'
     title: RYCHLOST
   - description: Několikaleté zkušenosti v oboru!
     image: 'https://ucarecdn.com/e6564a3c-5101-4003-a083-fbb170dcfe39/'
