@@ -196,7 +196,7 @@ collections: # A list of collections the CMS should be able to edit
             required: false
             fields:
               - { label: 'Služba', name: 'title', widget: 'string' }
-              - { label: Popisek, name: content, widget: text }
+              - { label: Popisek, name: description, widget: text }
               - { label: Obrázek, name: image, widget: image }
      
       - file: 'content/pages/reference.md'
