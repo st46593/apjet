@@ -311,10 +311,9 @@ collections: # A list of collections the CMS should be able to edit
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - { label: Informace, name: careerInfo, widget: markdown, required: true }
-          - label: Volné pozice 
-            name: jobOffers
-            widget: list
-            required: false,
+          - label: Volné pozice,
+            name: jobOffers,
+            widget: list,
             fields:
               - {
                   name: title,
