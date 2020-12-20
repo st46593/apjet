@@ -6,19 +6,16 @@ featuredImage: 'https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/'
 subtitle: >-
   AP Jet Hlinsko s.r.o. - zabýváme se řezáním vodním paprskem, CNC obráběním a
   zámečnickými pracemi
-services: 
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/raketa_Kreslic%C3%AD-pl%C3%A1tno-1-1.png'
+services:
+  - description: Vaše přání vyřídíme co nejrychleji!
+    image: 'https://ucarecdn.com/77c10066-2fd7-44e4-8d83-ae49b3fe72a1/'
     title: RYCHLOST
-    description: Vaše přání vyřídíme co nejrychleji!
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/zkusenosti-02-02.png'
+  - description: Několikaleté zkušenosti v oboru!
+    image: 'https://ucarecdn.com/4b305c85-9d30-4a6c-8dad-1bba9ecd13f5/'
     title: ZKUŠENOSTI
-    description: Několikaleté zkušenosti v oboru!
-  - image: 'http://apjet.cz/domains/apjet.cz/wp-content/uploads/2019/07/zodpovednost-03-03.png'
+  - description: 'Co slíbíme, to splníme!'
+    image: 'https://ucarecdn.com/2b32d6aa-9094-4c8b-8faf-39589fb46deb/'
     title: SPOLEHLIVOST
-    description: Co slíbíme, to splníme!
-meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
 ---
 **O nás**
 
