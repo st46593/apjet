@@ -17,13 +17,13 @@ media_library:
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
-    label: 'Page'
+    label: 'Stránky'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: true
     files:
       - file: 'content/pages/contact.md'
-        label: 'Contact Page'
+        label: 'Kontakt'
         name: 'contact-page'
         fields:
           - {
