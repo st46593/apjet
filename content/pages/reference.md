@@ -22,8 +22,5 @@ references:
   - image: 'https://ucarecdn.com/4c00d498-f36d-4773-824e-6d7a51b03955/'
     link: 'https://www.zamecnictvi-holetin.cz/'
     title: B&D Holetín s. r. o.
-meta:
-  description: spoluprace
-  title: Spolupracujeme
 ---
 

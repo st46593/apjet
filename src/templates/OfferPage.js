@@ -6,8 +6,6 @@ import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
 export const OfferPageTemplate = ({
-  title,
-  subtitle,
   offers = [],
 }) => (
         <main className="Blog">

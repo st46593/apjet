@@ -38,6 +38,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Název firmy, name: company, widget: text }
           - { label: Adresa, name: address, widget: text }
           - { label: IČO, name: ico, widget: string }
+          - { label: IČO, name: dic, widget: string }
           - { label: Email, name: email, widget: string }
           - label: 'Kontakty'
             name: 'contacts'
@@ -47,83 +48,6 @@ collections: # A list of collections the CMS should be able to edit
               - { label: 'Nadpis kontaktu', name: 'name', widget: 'string' }
               - { label: Telefon, name: phone, widget: text }
               - { label: Email, name: email, widget: text }
-            
-      - file: 'content/pages/blog.md'
-        label: 'Blog Page'
-        name: 'blog-page'
-        fields:
-          - {
-              label: Template,
-              name: template,
-              widget: hidden,
-              default: BlogIndex,
-            }
-          - { label: Slug, name: slug, widget: hidden, default: 'blog' }
-          - { label: Title, name: title, widget: string }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
-
-      - file: 'content/pages/offer.md'
-        label: 'Nabídka'
-        name: 'offer-page'
-        fields:
-          - {
-              label: Template,
-              name: template,
-              widget: hidden,
-              default: OfferPage,
-            }
-          - { label: Slug, name: slug, widget: hidden, default: 'components' }
-          - { label: Title, name: title, widget: string }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
 
       - file: 'content/pages/home.md'
         label: 'Úvodní stránka'
@@ -193,31 +117,7 @@ collections: # A list of collections the CMS should be able to edit
                   required: true,
                   default: '',
                 }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
-  
+          
       - file: 'content/pages/career.md'
         label: 'Kariéra'
         name: 'career-page'
@@ -283,44 +183,6 @@ collections: # A list of collections the CMS should be able to edit
                   widget: boolean,
                   required: false,
                 }
-
-  - name: infoPages
-    label: Info Page
-    editor:
-      preview: true
-    folder: content/infoPages
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: DefaultPage,
-        }
-      - { label: Slug, name: slug, widget: string }
-      - { label: Title, name: title, widget: string }
-      - { label: Featured Image, name: featuredImage, widget: image }
-      - { label: Body, name: body, widget: markdown }
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
 
   - name: posts
     label: Z naší výroby
