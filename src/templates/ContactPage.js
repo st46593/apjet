@@ -86,7 +86,6 @@ export const pageQuery = graphql`
         title
         template
         subtitle
-        featuredImage
         company
         address
         ico
@@ -96,11 +95,6 @@ export const pageQuery = graphql`
           name
           phone
           email
-        }
-        locations {
-          mapLink
-          lat
-          lng
         }
       }
     }
