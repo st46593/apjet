@@ -34,7 +34,7 @@ const ReferencePage = ({ data: { page } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-  <ReferencePageTemplate {...page.frontmatter} body={page.html} />
+  <ReferencePageTemplate {...page.frontmatter} body={page.html} featuredImage={page.frontmatter.featuredImage} references={page.frontmatter.references}/>
   </Layout>
 )
 export default ReferencePage
