@@ -230,15 +230,14 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         summary: '{{fields.image}}'
         fields:
-          - {
-              label: Obrázky, 
-              name: gallery,
-              widget: image,
-              media_library: { 
-                config: {
-                  multiple: true
+          - label: Obrázky, 
+            name: gallery,
+            widget: image,
+            media_library: { 
+              config: {
+                multiple: true
               }
-          }
+            } 
 
   - name: offers
     label: Nabízíme
