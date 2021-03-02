@@ -90,7 +90,7 @@ collections: # A list of collections the CMS should be able to edit
                   default_transformations: {
                     fetch_format: auto,
                     width: 2600,
-                    height: 2600,    
+                    heig  ht: 2600,    
                     quality: auto,
                     crop: fill,
                     effect: grayscale
@@ -263,21 +263,3 @@ collections: # A list of collections the CMS should be able to edit
         }
       - { label: Excerpt, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
