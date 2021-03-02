@@ -88,12 +88,12 @@ collections: # A list of collections the CMS should be able to edit
               media_library: { 
                 config: {
                   default_transformations: {
-                    - fetch_format: auto,
-                      width: 2600,
-                      height: 2600,    
-                      quality: auto,
-                      crop: fill,
-                      effect: grayscale
+                    fetch_format: auto,
+                    width: 2600,
+                    height: 2600,    
+                    quality: auto,
+                    crop: fill,
+                    effect: grayscale
                   }
                 } 
               }
@@ -143,12 +143,12 @@ collections: # A list of collections the CMS should be able to edit
               media_library: { 
                 config: {
                   default_transformations: {
-                    - fetch_format: auto,
-                      width: 2600,
-                      height: 2600,    
-                      quality: auto,
-                      crop: fill,
-                      effect: grayscale
+                    fetch_format: auto,
+                    width: 2600,
+                    height: 2600,    
+                    quality: auto,
+                    crop: fill,
+                    effect: grayscale
                   }
                 } 
               }
