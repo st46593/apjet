@@ -5,11 +5,15 @@ backend:
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
-  name: cloudinary
+  name: uploadcare
   config:
-    cloud_name: dpqtrqgbv
-    api_key: 752236248147127
+    publicKey: a73a170cb5cdef662983
     multiple: false
+    tabs: 'file camera url facebook gdrive'
+    effects: 'crop,rotate,enhance,grayscale'
+    imageShrink: '2000x2000'
+    previewStep: true
+    clearable: true
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
@@ -85,18 +89,8 @@ collections: # A list of collections the CMS should be able to edit
               label: Hlavní obrázek,
               name: featuredImage,
               widget: image,
-              media_library: { 
-                config: {
-                  default_transformations: {
-                    fetch_format: auto,
-                    width: 2600,
-                    heig  ht: 2600,    
-                    quality: auto,
-                    crop: fill,
-                    effect: grayscale
-                  }
-                } 
-              }
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - name: references
             label: Reference
@@ -140,18 +134,8 @@ collections: # A list of collections the CMS should be able to edit
               label: Hlavní obrázek,
               name: featuredImage,
               widget: image,
-              media_library: { 
-                config: {
-                  default_transformations: {
-                    fetch_format: auto,
-                    width: 2600,
-                    height: 2600,    
-                    quality: auto,
-                    crop: fill,
-                    effect: grayscale
-                  }
-                } 
-              }
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - { label: Informace, name: careerInfo, widget: markdown, required: true }
           - label: Volné pozice
@@ -230,14 +214,17 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         summary: '{{fields.image}}'
         fields:
-          - label: Obrázky, 
-            name: gallery,
-            widget: image,
-            media_library: { 
-              config: {
-                multiple: true
+          - {
+              label: Obrázky, 
+              name: gallery,
+              widget: image,
+              media_library: { 
+                config: {
+                  multiple: true,
+                  previewStep: false
+                } 
               }
-            } 
+          }
 
   - name: offers
     label: Nabízíme
