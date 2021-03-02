@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: CNC obrábění
 status: Featured / Published
 featuredImage: https://ucarecdn.com/d790759a-f8ce-48c9-b331-71af18b063de/

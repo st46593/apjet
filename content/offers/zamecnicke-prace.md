@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: Zámečnické práce
 status: Featured / Published
 featuredImage: https://ucarecdn.com/326ab7de-e75d-4458-a214-866f219801dd/

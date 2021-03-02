@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: Tvarové dělení materiálu PLASMA/AUTOGEN
 status: Featured / Published
 featuredImage: https://ucarecdn.com/82a820a3-63fb-4cf2-a20e-a63ff0818a03/

@@ -1,6 +1,6 @@
 ---
 template: CareerPage
-slug: career
+slug: kariera
 title: Aktuálně nabízíme tyto pozice
 featuredImage: https://ucarecdn.com/e0452786-91ee-4632-9aa6-ddcd23edfe61/
 careerInfo: "V případě zájmu nám napište na email: **obchod@apjet.cz**, nebo nám

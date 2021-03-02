@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: Vysekávací lis
 status: Published
 featuredImage: https://ucarecdn.com/324ce2cb-18f8-47be-b054-779b42ccaa94/

@@ -4,14 +4,15 @@ import './cms-utils'
 
 import { HomePageTemplate } from '../templates/HomePage'
 import { ContactPageTemplate } from '../templates/ContactPage'
-import { DefaultPageTemplate } from '../templates/DefaultPage'
 import { PortfolioPageTemplate } from '../templates/PortfolioPage'
 import { SinglePostTemplate } from '../templates/SinglePost'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
+import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { OfferPageTemplate } from '../templates/OfferPage'
 import { CareerPageTemplate } from '../templates/CareerPage'
 
 CMS.registerMediaLibrary(uploadcare)
+CMS.registerMediaLibrary(cloudinary)
 
 if (
   window.location.hostname === 'localhost' &&
@@ -29,9 +30,6 @@ CMS.registerPreviewTemplate('home-page', ({ entry }) => (
 ))
 CMS.registerPreviewTemplate('contact-page', ({ entry }) => (
   <ContactPageTemplate {...entry.toJS().data} />
-))
-CMS.registerPreviewTemplate('infoPages', ({ entry }) => (
-  <DefaultPageTemplate {...entry.toJS().data} />
 ))
 CMS.registerPreviewTemplate('blog-page', ({ entry }) => (
   <PortfolioPageTemplate {...entry.toJS().data} />

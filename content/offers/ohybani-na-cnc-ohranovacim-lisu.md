@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: Ohýbání na CNC ohraňovacím lisu
 status: Featured / Published
 featuredImage: https://ucarecdn.com/c8edb130-9810-4b7c-8412-37cd48e0fdd4/-/preview/

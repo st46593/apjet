@@ -1,6 +1,6 @@
 ---
 template: OfferPage
-slug: offer
+slug: nabidka
 title: Nabízíme
 subtitle: This is the blog page subtitle.
 meta:

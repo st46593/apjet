@@ -1,6 +1,6 @@
 ---
 template: ContactPage
-slug: contact
+slug: kontakt
 title: Kontaktujte nás
 subtitle: 
 company: 'AP Jet s. r. o.'

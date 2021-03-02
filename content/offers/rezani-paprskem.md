@@ -1,6 +1,6 @@
 ---
 template: SinglePost
-parent: offer
+parent: nabidka
 title: Řezání vodním paprskem
 status: Featured / Published
 featuredImage: 'https://ucarecdn.com/b7644f8c-b97a-4350-b894-4fe10bc3e3bd/'
