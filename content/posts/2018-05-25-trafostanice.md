@@ -10,19 +10,22 @@ parent: portfolio
 title: Trafostanice
 status: Published
 date: 2020-07-18
-featuredImage: https://ucarecdn.com/798aa828-e794-47c7-bf76-18e80123945a/
+featuredImage: https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809390/trafostanice/78890295_807351946368971_7253087005637083136_n_rq1gye.jpg
 images:
   - gallery:
-      - https://ucarecdn.com/f0977749-27c2-4ef0-be0b-b63a7ece6ac3/
-      - https://ucarecdn.com/798aa828-e794-47c7-bf76-18e80123945a/
-      - https://ucarecdn.com/30e69d66-0575-4d32-b593-2291258b030c/
-      - https://ucarecdn.com/a1274b82-61d7-4137-af2f-7d6e94c0b767/
-      - https://ucarecdn.com/a0613c06-c6ab-4c6b-8b98-42da3e6de53a/
-      - https://ucarecdn.com/55cbdc48-a94d-4508-933a-5ba84da341d0/
-      - https://ucarecdn.com/8ab7e97d-b70d-4baa-a4c4-3baf6dff16d6/
-      - https://ucarecdn.com/6fda883e-0a7c-4210-8102-c6820dcffc7b/
-    "gallery,":
-      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,,e_grayscale,f_auto,,h_2600,,q_auto,,w_2600,/v1614789138/IMG_9676_otoceno_pizepc.jpg
-      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,,e_grayscale,f_auto,,h_2600,,q_auto,,w_2600,/v1614789137/IMG_9663_otoceno_r5lgne.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809407/trafostanice/IMG_20180524_092043_vcd2kk.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809403/trafostanice/IMG_20180524_091932_scdrc9.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809401/trafostanice/IMG_20180524_091850_uipngj.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809400/trafostanice/IMG_20180524_091815_eym4w2.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809400/trafostanice/IMG_20180524_092021_xdi9eb.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809399/trafostanice/IMG_20180524_091747_de3qew.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809399/trafostanice/IMG_20180524_091730_pdkiqb.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809396/trafostanice/20180516_113849_ed4r2s.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809396/trafostanice/IMG_20180524_091640_swvmcq.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809396/trafostanice/IMG_20180524_091704_vcwfgb.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809395/trafostanice/IMG_20180524_091627_ovgvsg.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809394/trafostanice/IMG_20180524_091648_jytbzc.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809393/trafostanice/IMG_20180524_091655_ddqkmu.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809390/trafostanice/78890295_807351946368971_7253087005637083136_n_rq1gye.jpg
 ---
 Díky našim technologiím jsme mohli zpracovat kompletní výrobu plechových součástí trafostanice, včetně nastřelení vodících šroubů a vlisování nýtovacích matic.
