@@ -4,22 +4,22 @@ parent: portfolio
 title: Zakladače skla
 status: Published
 date: 2020-12-03
-featuredImage: https://ucarecdn.com/0602d20c-51d6-4f62-a297-33951719173b/
+featuredImage: https://res.cloudinary.com/dpqtrqgbv/image/upload/v1614809468/zakladace_skla/IMG_4621_fipttw.jpg
 excerpt: Zkladače skla
 images:
   - gallery:
-      - https://ucarecdn.com/7e78c084-6f3e-454a-95c5-7571eba290e3/
-      - https://ucarecdn.com/323f0174-1437-4e01-97ae-ab92abf01fb5/
-      - https://ucarecdn.com/6ab94b8a-db53-4836-9aa1-5bb2c088cbb0/
-      - https://ucarecdn.com/35d92a13-5d03-4e81-bb74-576faff48601/
-      - https://ucarecdn.com/0e135198-e3b0-4611-a8f1-2de6023fa258/
-      - https://ucarecdn.com/0b70dfb3-1039-46e5-8b74-daa5dfe1798c/
-      - https://ucarecdn.com/1ebb570c-1e68-46f5-97af-664ba1ff1ca7/
-      - https://ucarecdn.com/a05bb548-0f11-41eb-9ae9-1b92f9674c08/
-      - https://ucarecdn.com/1e2ad251-4ed1-4ab5-9eb3-23184114b66c/
-      - https://ucarecdn.com/683b2077-aba8-45db-af44-ce7fd60d282a/
-      - https://ucarecdn.com/249e6bc3-8163-4ed3-b5f1-1f7c4786a6b2/
-      - https://ucarecdn.com/61403f23-46fa-483c-819e-16a3094fb6b7/
-      - https://ucarecdn.com/5460b805-92ca-4389-b92e-470bd7eb6236/
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809478/zakladace_skla/IMG_4685_jwnqsi.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809473/zakladace_skla/IMG_4678_flby2w.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809472/zakladace_skla/IMG_4667_rxtimu.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809471/zakladace_skla/IMG_4674_jz6epi.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809471/zakladace_skla/IMG_4672_durllj.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809468/zakladace_skla/IMG_4666_k8hz75.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809468/zakladace_skla/IMG_4621_fipttw.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809467/zakladace_skla/IMG_4663_jp2dro.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809465/zakladace_skla/IMG_4627_nnjqs6.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809465/zakladace_skla/IMG_4638_wbrpdj.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809465/zakladace_skla/IMG_4644_j0gpyi.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809463/zakladace_skla/IMG_4649_cc6f14.jpg
+      - https://res.cloudinary.com/dpqtrqgbv/image/upload/c_fill,f_auto,,h_2600,,q_auto,,w_2600,/v1614809462/zakladace_skla/IMG_4647_hn67mp.jpg
 ---
 Vyvinuli jsme zakladače na skleněné desky, které Vám ušetří čas i peníze a jistě se hodí každému skláři do výrobny.
