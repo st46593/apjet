@@ -11,8 +11,8 @@ import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { OfferPageTemplate } from '../templates/OfferPage'
 import { CareerPageTemplate } from '../templates/CareerPage'
 
-CMS.registerMediaLibrary(uploadcare)
-CMS.registerMediaLibrary(cloudinary)
+CMS.registerMediaLibrary(uploadcare);
+CMS.registerMediaLibrary(cloudinary);
 
 if (
   window.location.hostname === 'localhost' &&
