@@ -9,7 +9,7 @@ media_library:
   config:
     cloud_name: dpqtrqgbv
     api_key: 752236248147127
-    multiple: false
+  multiple: false
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
@@ -234,9 +234,7 @@ collections: # A list of collections the CMS should be able to edit
             name: gallery,
             widget: image,
             media_library: { 
-              config: {
-                multiple: true
-              }
+              multiple: true
             } 
 
   - name: offers
