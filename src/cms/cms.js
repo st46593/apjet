@@ -7,12 +7,10 @@ import { ContactPageTemplate } from '../templates/ContactPage'
 import { PortfolioPageTemplate } from '../templates/PortfolioPage'
 import { SinglePostTemplate } from '../templates/SinglePost'
 import uploadcare from 'netlify-cms-media-library-uploadcare'
-import cloudinary from 'netlify-cms-media-library-cloudinary'
 import { OfferPageTemplate } from '../templates/OfferPage'
 import { CareerPageTemplate } from '../templates/CareerPage'
 
 CMS.registerMediaLibrary(uploadcare);
-CMS.registerMediaLibrary(cloudinary);
 
 if (
   window.location.hostname === 'localhost' &&

@@ -22,7 +22,7 @@ class ReferenceSection extends React.Component {
     }))
 
   render() {
-    const { references, title, showLoadMore, loadMoreTitle } = this.props,
+    const { references, showLoadMore, loadMoreTitle } = this.props,
       { limit } = this.state,
       visibleReferences = references.slice(0, limit || references.length)
 

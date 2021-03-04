@@ -5,11 +5,15 @@ backend:
 
 # display_url: https://gatsbro.netlify.com # This url will display in the top-right of the CMS
 media_library:
-  name: cloudinary
+  name: uploadcare
   config:
-    cloud_name: dpqtrqgbv
-    api_key: 752236248147127
-    multiple: true
+    publicKey: c7e7e5224ab935b1b668
+    multiple: false
+    tabs: 'file camera url facebook gdrive'
+    effects: 'crop,rotate,enhance,grayscale'
+    imageShrink: '2000x2000'
+    previewStep: true
+    clearable: true
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
@@ -85,18 +89,8 @@ collections: # A list of collections the CMS should be able to edit
               label: Hlavní obrázek,
               name: featuredImage,
               widget: image,
-              media_library: { 
-                config: {
-                  default_transformations: {
-                    fetch_format: auto,
-                    width: 2600,
-                    height: 2600,    
-                    quality: auto,
-                    crop: fill,
-                    effect: grayscale
-                  }
-                } 
-              }
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - name: references
             label: Reference
@@ -140,18 +134,8 @@ collections: # A list of collections the CMS should be able to edit
               label: Hlavní obrázek,
               name: featuredImage,
               widget: image,
-              media_library: { 
-                config: {
-                  default_transformations: {
-                    fetch_format: auto,
-                    width: 2600,
-                    height: 2600,    
-                    quality: auto,
-                    crop: fill,
-                    effect: grayscale
-                  }
-                } 
-              }
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
             }
           - { label: Informace, name: careerInfo, widget: markdown, required: true }
           - label: Volné pozice
@@ -174,31 +158,6 @@ collections: # A list of collections the CMS should be able to edit
                     buttons: ['heading-three', 'heading-four']
                   }
                 }
-          
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
 
   - name: posts
     label: Z naší výroby
@@ -210,32 +169,37 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Parent, name: parent, widget: hidden, default: portfolio }
-      - { label: Title, name: title, widget: string }
+      - { label: Titulek, name: title, widget: string }
       - label: 'Status'
         name: 'status'
         widget: 'select'
-        options: ['Published', 'Featured', 'Draft']
-        default: 'Published'
-      - { label: Date / Order, name: date, widget: date, format: 'YYYY-MM-DD' }
+        options: ['Publikováno', 'Featured', 'Návrh']
+        default: 'Publikováno'
+      - { label: Datum, name: date, widget: date, format: 'YYYY-MM-DD' }
       - {
           label: Úvodní obrázek,
           name: featuredImage,
           widget: image,
           required: true
         }
-      - { label: Excerpt, name: excerpt, widget: text }
-      - { label: Content, name: body, widget: markdown }
+      - { label: Text na kartě, name: excerpt, widget: text }
+      - { label: Obsah, name: body, widget: markdown }
       - label: "Galerie"
         name: "images"
         widget: "list"
         summary: '{{fields.image}}'
         fields:
-          - label: Obrázky, 
-            name: gallery,
-            widget: image,
-            media_library: { 
-              multiple: true
-            } 
+          - {
+              label: Obrázky, 
+              name: gallery,
+              widget: image,
+              media_library: { 
+                config: {
+                  multiple: true,
+                  previewStep: false
+                } 
+              }
+          }
 
   - name: offers
     label: Nabízíme
@@ -247,17 +211,17 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: SinglePost }
       - { label: Parent, name: parent, widget: hidden, default: nabidka }
-      - { label: Title, name: title, widget: string }
+      - { label: Titulek, name: title, widget: string }
       - label: 'Status'
         name: 'status'
         widget: 'select'
-        options: ['Published', 'Featured', 'Draft']
-        default: 'Published'
+        options: ['Publikováno', 'Featured', 'Návrh']
+        default: 'Publikováno'
       - {
           label: Úvodní obrázek,
           name: featuredImage,
           widget: image,
           required: true
         }
-      - { label: Excerpt, name: excerpt, widget: text }
-      - { label: Content, name: body, widget: markdown }
+      - { label: Text na kartě, name: excerpt, widget: text }
+      - { label: Obsah, name: body, widget: markdown }
